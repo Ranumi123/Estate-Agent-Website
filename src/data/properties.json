@@ -1,0 +1,200 @@
+{
+  "properties": [
+    {
+      "id": "prop1",
+      "type": "House",
+      "bedrooms": 3,
+      "price": 750000,
+      "tenure": "Freehold",
+      "description": "Attractive three-bedroom semi-detached family home...",
+      "longDescription": "This attractive three-bedroom semi-detached family home is set on a large plot with a south-facing garden, perfect for families seeking outdoor space. The property features a modern kitchen, two reception rooms, and a master bedroom with an en-suite. Close to schools, shops, and public transport links.",
+      "location": "Petts Wood Road, Petts Wood, Orpington BR5",
+      "pictures": [
+        "/images/properties/prop1main.webp",
+        "/images/properties/prop1image1.webp",
+        "/images/properties/prop1image2.webp",
+        "/images/properties/prop1image3.webp",
+        "/images/properties/prop1image4.webp",
+        "/images/properties/prop1image5.webp",
+        "/images/properties/prop1image6.webp"        
+      ],
+      "picture":"/images/properties/prop1main.webp",
+      "floorPlan": "/images/properties/prop1floormap.png",
+      "mapUrl": "https://maps.google.com/?q=Crofton+Road,+Orpington+BR6",
+      "url": "properties/prop1.html",
+      "added": {
+        "month": "October",
+        "day": 12,
+        "year": 2022
+      }
+    },
+    {
+      "id": "prop2",
+      "type": "Flat",
+      "bedrooms": 2,
+      "price": 399995,
+      "tenure": "Freehold",
+      "description": "Presented in excellent decorative order throughout...",
+      "longDescription": "A beautifully presented two-bedroom flat, offering spacious accommodation and modern interiors. Ideally located near local amenities and transport links, this property is perfect for professionals or small families.",
+      "location": "Crofton Road Orpington BR6",
+      "pictures": [
+        "/images/properties/prop2main.webp",
+        "/images/properties/prop2image1.webp",
+        "/images/properties/prop2image2.webp",
+        "/images/properties/prop2image3.webp",
+        "/images/properties/prop2image4.webp",
+        "/images/properties/prop2image5.webp",
+        "/images/properties/prop2image6.webp"
+      ],
+      "picture":"/images/properties/prop2main.webp",
+      "floorPlan": "/images/properties/prop2floormap.png",
+      "mapUrl": "https://maps.google.com/?q=Crofton+Road,+Orpington+BR6",
+      "url": "properties/prop2.html",
+      "added": {
+        "month": "September",
+        "day": 14,
+        "year": 2022
+      }
+    },
+    {
+      "id": "prop3",
+      "type": "Flat",
+      "bedrooms": 1,
+      "price": 250000,
+      "tenure": "Leasehold",
+      "description": "A cozy one-bedroom flat located near local amenities...",
+      "longDescription": "This cozy one-bedroom flat is an excellent opportunity for first-time buyers or investors. It features an open-plan living area, a fully fitted kitchen, and a spacious bathroom. Located near shops and transport links, offering convenience and comfort.",
+      "location": "High Street, Croydon CR0",
+      "pictures": [
+        "/images/properties/prop3main.webp",
+        "/images/properties/prop3image1.webp",
+        "/images/properties/prop3image2.webp",
+        "/images/properties/prop3image3.webp",
+        "/images/properties/prop3image4.webp",
+        "/images/properties/prop3image5.webp",
+        "/images/properties/prop3image6.webp"
+      ],
+      "picture":"/images/properties/prop3main.webp",
+      "floorPlan": "/images/properties/prop3floormap.png",
+      "mapUrl": "https://maps.google.com/?q=High+Street,+Croydon+CR0",
+      "url": "properties/prop3.html",
+      "added": {
+        "month": "December",
+        "day": 10,
+        "year": 2023
+      }
+    },
+    {
+      "id": "prop4",
+      "type": "House",
+      "bedrooms": 4,
+      "price": 850000,
+      "tenure": "Freehold",
+      "description": "Spacious four-bedroom detached house in a quiet suburb...",
+      "longDescription": "A stunning four-bedroom detached house, perfect for families seeking modern living in a tranquil setting. The property includes a large garden, double garage, and spacious living areas, with close proximity to schools and parks.",
+      "location": "Maple Avenue, Harrow HA1",
+      "pictures": [
+        "/images/properties/prop4main.webp",
+        "/images/properties/prop4image1.webp",
+        "/images/properties/prop4image2.webp",
+        "/images/properties/prop4image3.webp",
+        "/images/properties/prop4image4.webp",
+        "/images/properties/prop4image5.webp",
+        "/images/properties/prop4image6.webp"
+      ],
+      "picture":"/images/properties/prop4main.webp",
+      "floorPlan": "/images/properties/prop4floormap.png",
+      "mapUrl": "https://maps.google.com/?q=Maple+Avenue,+Harrow+HA1",
+      "url": "properties/prop4.html",
+      "added": {
+        "month": "November",
+        "day": 20,
+        "year": 2023
+      }
+    },
+    {
+      "id": "prop5",
+      "type": "Apartment",
+      "bedrooms": 3,
+      "price": 550000,
+      "tenure": "Leasehold",
+      "description": "Modern three-bedroom apartment with excellent facilities...",
+      "longDescription": "This modern three-bedroom apartment offers excellent facilities including a gym, concierge service, and underground parking. Situated in a prestigious area, the property provides luxury living with breathtaking city views.",
+      "location": "Park Lane, Westminster W1K",
+      "pictures": [
+        "/images/properties/prop5main.webp",
+        "/images/properties/prop5image1.webp",
+        "/images/properties/prop5image2.webp",
+        "/images/properties/prop5image3.webp",
+        "/images/properties/prop5image4.webp",
+        "/images/properties/prop5image5.webp",
+        "/images/properties/prop5image6.webp"
+      ],
+      "picture":"/images/properties/prop5main.webp",
+      "floorPlan": "/images/properties/prop5floormap.png",
+      "mapUrl": "https://maps.google.com/?q=Park+Lane,+Westminster+W1K",
+      "url": "properties/prop5.html",
+      "added": {
+        "month": "January",
+        "day": 5,
+        "year": 2024
+      }
+    },
+    {
+      "id": "prop6",
+      "type": "Studio",
+      "bedrooms": 0,
+      "price": 180000,
+      "tenure": "Leasehold",
+      "description": "A compact and affordable studio apartment in a prime location...",
+      "longDescription": "This compact and affordable studio apartment is ideal for students or single professionals. Located in the heart of the city, it offers great accessibility to shops, restaurants, and public transport.",
+      "location": "Oxford Street, London W1D",
+      "pictures": [
+        "/images/properties/prop6main.webp",
+        "/images/properties/prop6image1.webp",
+        "/images/properties/prop6image2.webp",
+        "/images/properties/prop6image3.webp",
+        "/images/properties/prop6image4.webp",
+        "/images/properties/prop6image5.webp",
+        "/images/properties/prop6image6.webp"
+      ],
+      "picture":"/images/properties/prop6main.webp",
+      "floorPlan": "/images/properties/prop6floormap.png",
+      "mapUrl": "https://maps.google.com/?q=Oxford+Street,+London+W1D",
+      "url": "properties/prop6.html",
+      "added": {
+        "month": "February",
+        "day": 15,
+        "year": 2024
+      }
+    },
+    {
+      "id": "prop7",
+      "type": "Bungalow",
+      "bedrooms": 2,
+      "price": 375000,
+      "tenure": "Freehold",
+      "description": "Charming two-bedroom bungalow with a large garden...",
+      "longDescription": "This charming two-bedroom bungalow features a large garden, a cozy living area, and a fully equipped kitchen. Located in a peaceful neighborhood, it's perfect for retirees or small families.",
+      "location": "Elm Street, Canterbury CT1",
+      "pictures": [
+        "/images/properties/prop7main.webp",
+        "/images/properties/prop7image1.webp",
+        "/images/properties/prop7image2.webp",
+        "/images/properties/prop7image3.webp",
+        "/images/properties/prop7image4.webp",
+        "/images/properties/prop7image5.webp",
+        "/images/properties/prop7image6.webp"
+      ],
+      "picture":"/images/properties/prop7main.webp",
+      "floorPlan": "/images/properties/prop7floormap.png",
+      "mapUrl": "https://maps.google.com/?q=Elm+Street,+Canterbury+CT1",
+      "url": "properties/prop7.html",
+      "added": {
+        "month": "March",
+        "day": 3,
+        "year": 2024
+      }
+    }
+  ]
+}

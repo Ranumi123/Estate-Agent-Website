@@ -1,0 +1,143 @@
+/* Results.css */
+.results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.property-card {
+  background-color: white; 
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.property-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.property-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.property-card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 16px 20px 8px;
+  color: #003366; /* Navy for headings */
+}
+
+.property-card p {
+  font-size: 16px;
+  margin: 0 20px 12px;
+  color: #555; /* Dark Gray for text */
+  line-height: 1.5;
+}
+
+.property-card a {
+  display: block;
+  text-align: center;
+  background-color: #00CC99; /* Teal for primary call-to-action */
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px;
+  margin: 16px 20px 10px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.property-card a:hover {
+  background-color: #009977; /* Darker Teal on hover */
+  transform: scale(1.05);
+}
+
+.property-card button {
+  display: block;
+  width: calc(100% - 40px);
+  margin: 0 auto 16px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #003366; /* Navy for button text */
+  background-color: #66CCFF; /* Light Sky Blue for button background */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.property-card button:hover {
+  background-color: #3399CC; /* Medium Blue for hover state */
+  transform: scale(1.05);
+}
+
+/* Accessibility and responsiveness */
+@media (prefers-reduced-motion: reduce) {
+  .property-card:hover {
+    transform: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .property-card a:hover,
+  .property-card button:hover {
+    transform: none;
+  }
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 1024px) {
+  .results {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust the grid columns for medium screens */
+  }
+
+  .property-card img {
+    height: 180px; /* Adjust image height */
+  }
+
+  .property-card h3 {
+    font-size: 18px; /* Adjust heading font size */
+  }
+
+  .property-card p {
+    font-size: 14px; /* Adjust paragraph font size */
+  }
+
+  .property-card a,
+  .property-card button {
+    font-size: 14px; /* Adjust font size of links and buttons */
+  }
+}
+
+@media (max-width: 768px) {
+  .results {
+    grid-template-columns: 1fr; /* Single column layout for small screens */
+  }
+
+  .property-card img {
+    height: 150px; /* Adjust image height for smaller screens */
+  }
+
+  .property-card h3 {
+    font-size: 16px; /* Adjust heading font size */
+  }
+
+  .property-card p {
+    font-size: 14px; /* Adjust paragraph font size */
+  }
+
+  .property-card a,
+  .property-card button {
+    font-size: 14px; /* Adjust font size of links and buttons */
+  }
+}

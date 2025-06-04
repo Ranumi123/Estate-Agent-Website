@@ -1,0 +1,95 @@
+/* SearchForm.css */
+.search-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: white; /* Very Light Blue background for the form */
+  border: 1px solid #e0e0e0; /* Subtle border for the form */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.search-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  color: #003366; /* Navy color for the labels */
+}
+
+.search-form input,
+.search-form select {
+  margin-top: 8px;
+  padding: 10px;
+  font-size: 14px;
+  color: #555; /* Dark Gray for input text */
+  border: 1px solid #ccc; /* Neutral border color */
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-form input:focus,
+.search-form select:focus {
+  border-color: #00CC99; /* Teal border on focus */
+  box-shadow: 0 0 4px rgba(0, 204, 153, 0.5); /* Teal shadow on focus */
+}
+
+.search-form button {
+  grid-column: span 2;
+  padding: 8px; /* Reduced padding for a thinner appearance */
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #00CC99; /* Teal background for the button */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-form button:hover {
+  background-color: #009977; /* Darker Teal on hover */
+  transform: scale(1.05);
+}
+
+.search-form button:active {
+  transform: scale(1);
+}
+
+.search-form button:focus {
+  outline: 2px solid #009977; /* Darker Teal outline on focus */
+  outline-offset: 2px;
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 1024px) {
+  .search-form {
+    grid-template-columns: 1fr 1fr; /* Two columns for medium screens */
+  }
+
+  .search-form button {
+    grid-column: span 2; /* Button spans across both columns */
+  }
+}
+
+@media (max-width: 768px) {
+  .search-form {
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
+  }
+
+  .search-form button {
+    grid-column: span 1; /* Button spans across one column */
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .search-form input:focus,
+  .search-form select:focus,
+  .search-form button:hover {
+    box-shadow: none;
+    transform: none;
+  }
+}

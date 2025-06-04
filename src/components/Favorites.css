@@ -1,0 +1,166 @@
+/* Favorites Component Styles */
+.favorites {
+  padding: 24px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.favorites h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.favorite-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  margin-bottom: 16px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: grab;
+}
+
+.favorite-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.favorite-item h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #007bff;
+}
+
+.favorite-item p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.favorite-item a {
+  display: inline-block;  /* Ensure it behaves like a button */
+  padding: 12px 20px;  /* Add padding for better button appearance */
+  background-color: #00CC99; /* Teal */
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.favorite-item a:hover {
+  color: #0056b3;
+}
+
+.favorites button {
+  padding: 12px 20px;
+  margin-top: 16px;
+  font-size: 16px;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.favorites button:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+}
+
+/* Favorites Popup Sidebar */
+.favorites-popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
+  padding: 24px;
+  overflow-y: auto;
+  z-index: 1001;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(0);
+}
+
+.favorites-popup.hidden {
+  transform: translateX(100%);
+}
+
+.favorites-popup .close-popup-btn {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #e74c3c;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.favorites-popup .close-popup-btn:hover {
+  color: #c0392b;
+}
+
+/* Responsive Design */
+
+/* For screens ≤ 768px (mobile view) */
+@media (max-width: 768px) {
+  .favorites {
+    padding: 16px;
+    max-width: 95%;
+  }
+
+  .favorite-item {
+    flex-direction: column;
+    align-items: center;  /* Center items for mobile */
+  }
+
+  .favorites-btn {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+
+  .favorites-popup {
+    width: 100%;
+  }
+}
+
+/* For screens ≤ 1024px (tablet view) */
+@media (max-width: 1024px) {
+  .favorites {
+    padding: 20px;
+    max-width: 90%; /* Slightly smaller container for tablets */
+  }
+
+  .favorite-item {
+    flex-direction: column;
+    align-items: center;  /* Center items for tablets as well */
+  }
+
+  .favorites-btn {
+    padding: 10px 18px;
+    font-size: 15px;
+  }
+
+  .favorites-popup {
+    width: 80%; /* Reduce width for better tablet fit */
+  }
+}

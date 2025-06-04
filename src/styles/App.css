@@ -1,0 +1,32 @@
+/* Global Styles */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: white;
+  background-attachment: fixed; /* Ensures the gradient stays in place when scrolling */
+  color: #333; /* Default text color */
+  }
+
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* Responsive Layout */
+@media (max-width: 1024px) {
+  .App {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .App {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,116 @@
+/* Header styles */
+.header {
+  background-color: #003366;
+  padding: 5px 10px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Branding */
+.brand {
+  flex: 1;
+}
+
+.brand-name {
+  font-size: 24px;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+}
+
+/* Navigation */
+.navbar {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navlinks {
+  display: flex;
+  list-style: none;
+}
+
+.navlinks li {
+  margin: 0 10px;
+}
+
+.navlinks a,
+.navlinks button {
+  color: #fff;
+  font-size: 24px; /* Adjusted font size to match icons */
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navlinks button:hover,
+.navlinks a:hover {
+  color: #ff8c00; /* Hover effect */
+}
+
+/* Icon styles */
+.favorites-icon-btn i,
+.navlinks a i {
+  font-size: 24px; /* Ensures consistent icon sizes */
+}
+
+.favorites-icon-btn:hover i {
+  color: #ff8c00; /* Hover effect for heart icon */
+}
+
+/* Responsive Design */
+
+/* For screens ≤ 768px (mobile view) */
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 20px; /* Increased padding for better mobile touch */
+  }
+
+  .brand-name {
+    font-size: 20px; /* Smaller brand name for mobile */
+  }
+
+  .navlinks {
+    display: block;
+    text-align: center; /* Stack the links vertically */
+  }
+
+  .navlinks li {
+    margin: 10px 0;
+  }
+
+  .navlinks a,
+  .navlinks button {
+    font-size: 20px; /* Adjust font size for mobile */
+  }
+}
+
+/* For screens ≤ 1024px (tablet view) */
+@media (max-width: 1024px) {
+  .header {
+    padding: 10px 20px; /* Slightly larger padding for tablet view */
+  }
+
+  .brand-name {
+    font-size: 22px; /* Adjusted brand name size for tablet */
+  }
+
+  .navlinks {
+    display: flex;
+    justify-content: space-around; /* Space links more evenly */
+  }
+
+  .navlinks li {
+    margin: 0 15px;
+  }
+
+  .navlinks a,
+  .navlinks button {
+    font-size: 22px; /* Slightly smaller font size for tablet */
+  }
+}
